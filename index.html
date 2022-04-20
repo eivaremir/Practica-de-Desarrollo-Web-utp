@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Reg. Curso de Des. Web.</title>
-    </head>
-    <body
-        style="
-            background-color: pink;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-                Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-                sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        "
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg. Curso de Des. Web.</title>
+  </head>
+  <body
+    style="
+      background-color: #06113c;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    "
+  >
+    <!--  -->
+
+    <!--  -->
+
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      "
+      action="/hastalaproxima.html"
     >
-        <header>
-            <h1 style="text-align: center">
-                Registro de curso de Desarrollo Web
-            </h1>
-        </header>
+      <fieldset style="display: flex; flex-direction: column">
+        <legend>Información Personal</legend>
+        <label for="name">Nombre</label>
+        <input placeholder="nombre" name="name" />
 
-        <form
-            style="
-                display: flex;
-                flex-direction: column;
-                max-width: 900px;
-                margin: 0 auto;
-            "
-        >
-            <!--  -->
+        <label for="surname">Apellido</label>
+        <input placeholder="apellido" name="surname" />
 
-            <!--  -->
+        <label for="userId">Cedula</label>
+        <input placeholder="cedula" name="userId" />
 
             <!--  -->
             <fieldset name="campo3">
@@ -90,4 +97,88 @@
             <span> 🍔Borokotroko &copy;2022 </span>
         </footer>
     </body>
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday" />
+
+        <label for="birthplace">Lugar de nacimiento</label>
+        <!-- ISO 3166-2:PA -->
+        <select name="birthplace" id="birthplace">
+          <option value="1">Bocas del Toro</option>
+          <option value="4">Chiriquí</option>
+          <option value="2">Coclé</option>
+          <option value="3">Colón</option>
+          <option value="5">Darién</option>
+          <option value="6">Herrera</option>
+          <option value="7">Los Santos</option>
+          <option value="8" selected>Panamá</option>
+          <option value="10">Panamá Oeste</option>
+          <option value="9">Veraguas</option>
+        </select>
+      </fieldset>
+
+      <!--  -->
+      <fieldset>
+        <legend>Información de Salud</legend>
+        <label>Peso (lbs)</label>
+        <input type="range" id="points" name="points" min="0" max="300" />
+        <label>Altura (cm)</label>
+        <input type="range" id="points" name="points" min="0" max="200" />
+        <div style="display: flex; flex-direction: column">
+          <label>Alergias</label>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="rinitis"
+              name="rinitis"
+              value="rinitis"
+            />
+            <label for="rinitis">rinitis</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input type="checkbox" id="asma" name="asma" value="asma" />
+            <label for="asma">asma</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="lactosa"
+              name="lactosa"
+              value="lactosa"
+            />
+            <label for="lactosa">lactosa</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="medicamentos"
+              name="medicamentos"
+              value="medicamentos"
+            />
+            <label for="medicamentos">medicamentos</label>
+            <input type="text" />
+          </div>
+          <div style="display: flex">
+            <input type="checkbox" id="otro" name="otro" value="otro" />
+            <label for="otro">otro</label>
+            <input type="text" />
+          </div>
+          <!--•	Medicamentos, especificar (cuadro de texto)
+  •	Otro, especificar (cuadro de texto)
+  -->
+        </div>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <footer
+      style="
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      "
+    >
+      <span> 🍔Borokotroko &copy;2022 </span>
+    </footer>
+  </body>
 </html>
