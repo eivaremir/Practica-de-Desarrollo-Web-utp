@@ -1,55 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Reg. Curso de Des. Web.</title>
-    </head>
-    <body
-        style="
-            background-color: pink;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-                Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-                sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        "
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg. Curso de Des. Web.</title>
+  </head>
+  <body
+    style="
+      background-color: pink;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    "
+  >
+    <header>
+      <h1 style="text-align: center">Registro de curso de Desarrollo Web</h1>
+    </header>
+
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        margin: 0 auto;
+      "
     >
-        <header>
-            <h1 style="text-align: center">
-                Registro de curso de Desarrollo Web
-            </h1>
-        </header>
+      <!--  -->
 
-        <form
-            style="
-                display: flex;
-                flex-direction: column;
-                max-width: 900px;
-                margin: 0 auto;
-            "
-        >
-            <!--  -->
+      <!--  -->
+      <fieldset>
+        <legend>Información de Salud</legend>
+        <label>Peso (lbs)</label>
+        <input type="range" id="points" name="points" min="0" max="300" />
+        <label>Altura (cm)</label>
+        <input type="range" id="points" name="points" min="0" max="200" />
+        <div style="display: flex; flex-direction: column">
+          <label>Alergias</label>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="rinitis"
+              name="rinitis"
+              value="rinitis"
+            />
+            <label for="rinitis">rinitis</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input type="checkbox" id="asma" name="asma" value="asma" />
+            <label for="asma">asma</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="lactosa"
+              name="lactosa"
+              value="lactosa"
+            />
+            <label for="lactosa">lactosa</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              id="medicamentos"
+              name="medicamentos"
+              value="medicamentos"
+            />
+            <label for="medicamentos">medicamentos</label>
+            <input type="text" />
+          </div>
+          <div style="display: flex">
+            <input type="checkbox" id="otro" name="otro" value="otro" />
+            <label for="otro">otro</label>
+            <input type="text" />
+          </div>
+          <!--•	Medicamentos, especificar (cuadro de texto)
+•	Otro, especificar (cuadro de texto)
+-->
+        </div>
+      </fieldset>
 
-            <!--  -->
+      <!--  -->
 
-            <!--  -->
+      <button>Enviar</button>
+    </form>
 
-            <button>Enviar</button>
-        </form>
-
-        <footer
-            style="
-                margin-top: auto;
-                display: flex;
-                justify-content: center;
-                padding: 3rem 0;
-            "
-        >
-            <span> 🍔Borokotroko &copy;2022 </span>
-        </footer>
-    </body>
+    <footer
+      style="
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      "
+    >
+      <span> 🍔Borokotroko &copy;2022 </span>
+    </footer>
+  </body>
 </html>
