@@ -4,7 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #4d8b31;
+        color: #fff;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        margin: 0 auto;
+        border: 3px solid #000;
+        border-radius: 20px;
+        background-color: #ff8427;
+      }
+
+      .letters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+        border: 3px solid #000;
+        border-radius: 20px;
+        background-color: #ffc800;
+        color: #fff;
+      }
+
+      .letters.active {
+        cursor: pointer;
+        background-color: #234;
+        transition: all 0.3s;
+      }
+      .letters.active:hover {
+        background-color: rgb(78, 109, 140);
+        transform: scale(1.1);
+      }
+
+      .letters a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .students-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>DICCIONARIO.COM</h1>
+      <h2>Bienvenidos al sitio de las mejores definiciones de Panamá</h2>
+    </header>
+
+    <section>
+      <div class="container">
+        <a href="./a.html"><div class="letters active">A</div></a>
+        <div class="letters">B</div>
+        <div class="letters">C</div>
+        <div class="letters">D</div>
+        <a href="./a.html"><div class="letters active">E</div></a>
+        <div class="letters">F</div>
+        <div class="letters">G</div>
+        <div class="letters">H</div>
+        <a href="./i.html"><div class="letters active">I</div></a>
+        <div class="letters">J</div>
+        <div class="letters">K</div>
+        <div class="letters">L</div>
+        <div class="letters">M</div>
+        <div class="letters">N</div>
+        <a href="./o.html"><div class="letters active">O</div></a>
+        <div class="letters">P</div>
+        <div class="letters">Q</div>
+        <div class="letters">R</div>
+        <div class="letters">S</div>
+        <div class="letters">T</div>
+        <a href="./u.html"><div class="letters active">U</div></a>
+        <div class="letters">V</div>
+        <div class="letters">W</div>
+        <div class="letters">X</div>
+        <div class="letters">Y</div>
+        <div class="letters">Z</div>
+      </div>
+    </section>
+
+    <section class="students-info">
+      <h3>Taller práctico #3</h3>
+      <h4>Integrantes</h4>
+      <ul>
+        <li>Luis Carreyó</li>
+        <li>Eivar Morales</li>
+        <li>Misael Villaverde</li>
+      </ul>
+    </section>
+  </body>
 </html>
